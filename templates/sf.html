@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       
+        form{
+            color: black;
+            width: fit-content;
+            padding: 30px;
+            background-color: rgb(218, 135, 235);
+            box-shadow: -20px 20px 30px rgb(0, 255, 179);
+            border-radius: 20px;
+            transition: .6s;
+            
+        }
+        
+</style>
+<body>
+    <center>
+        <h1>Student Validate_DJ_forms</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+
+                {{SFO.as_p}}
+
+
+            <input type="submit" value="Validate_DJ_forms">
+        </form>
+    </center>
+</body>
+</html>
